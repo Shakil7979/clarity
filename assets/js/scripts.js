@@ -7,13 +7,13 @@ $(document).ready(function(){
 	// });
 
 	// Banner Carousel
-	// $('.banner_carousel').owlCarousel({
-	// 	items:1,
-	// 	loop:true,
-	// 	nav:true,
-	// 	dots:true,
-	// 	autoplay:true,
-	// });
+	$('.top_header_carousel').owlCarousel({
+		items:1,
+		loop:true,
+		nav:false,
+		dots:false,
+		autoplay:true,
+	});
 
 
 

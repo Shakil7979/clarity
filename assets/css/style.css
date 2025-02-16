@@ -6,6 +6,7 @@ html{
 body{	
 	font-size: 1.6rem; 
 	font-weight: 400;
+	font-family: 'Avenir Next LT Pro';
 }
 h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
@@ -22,6 +23,17 @@ ul li a,a{
 /*======================  Start Page  ======================*/
 
 
+.header_top {
+	background: #06364C;
+	padding: 10px 0;
+}
+
+.top_header_single p {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
+}
 
 
 
@@ -29,4 +41,7 @@ ul li a,a{
 
 /*======================  End Page  ======================*/
 
+/* 
 
+font-family: 'Avenir Next LT Pro';
+ */
