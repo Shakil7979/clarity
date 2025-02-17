@@ -23,17 +23,21 @@ $(document).ready(function(){
             $(this).removeClass("add_header");
         }
     );
+ 
 
-	// $(document).ready(function () {
-	// 	$(".menu_item").hover(
-	// 		function () {
-	// 			$(".mega_menu").css("left", "0"); // Slide in from the left
-	// 		},
-	// 		function () {
-	// 			$(".mega_menu").css("left", "-100%"); // Hide to the left
-	// 		}
-	// 	);
-	// });
+
+	$(".menu_item").hover(
+		function () {
+			$(".mega_menu").hide(); // Hide all mega menus first
+			$(this).find(".mega_menu").stop(true, true).fadeIn(300); // Show only hovered li's mega menu
+			$(this).find("i").css({'opacity':'1','visibility':'visible'}); // Show icon on hover
+		},
+		function () {
+			$(this).find(".mega_menu").stop(true, true).fadeOut(300); // Hide mega menu when not hovering
+			$(this).find("i").css({'opacity':'0','visibility':'hidden'}); // Hide icon when not hovering
+		}
+	); 
+	
 	
 	
 
